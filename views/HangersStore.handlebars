@@ -3,7 +3,12 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-3">
-			<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+			<div id="accordion" role="tablist">
+  				{{> MetalHangers }}
+  				{{> WoodHangers}}
+  				{{> PlasticHangers}}
+			</div>
+			{{!-- <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
   				<a class="nav-link" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-expanded="true">
   					Metal
   				</a>
@@ -13,8 +18,9 @@
   				<a class="nav-link" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-expanded="true">
   					Plastic
   				</a>
-			</div>
+			</div> --}}
 		</div>
+
 		<div class="col-lg-9">	
 			<div class="tab-content" id="v-pills-tabContent">
   			<div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
